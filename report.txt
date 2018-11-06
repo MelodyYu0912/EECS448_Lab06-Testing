@@ -1,0 +1,7 @@
+Possible bugs in:
+1. isEmpty() - isEmpty() would return true on an empty list as expected in test2(), but would return true again on an non-empty list in test3(), which is not correct.
+2. addBack() - the size of the list will be increased correctly after calling addBack() as showed in test5() and test9(), but the int is not added to the list in the position we want (i.e. the back of the list) as showed in the test15(); most likely the int is added to the front of the list instead.
+3. removeFront() - neither is the size of the list got changed correctly nor the int that is supposed to be removed got removed.
+4. removeBack() - neither is the size of the list got changed correctly nor the int that is supposed to be removed got removed.
+  Note: 3. 4. leads to a failure of test10(), test11(), test12(), test13(), test16() and test17().
+5. The failure of test22() is most likely caused by the bug in addBack(), which is called in the function loadList().

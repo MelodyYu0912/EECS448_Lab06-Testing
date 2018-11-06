@@ -24,11 +24,11 @@ void Test::printPass(bool isPassed) const
 {
   if (isPassed)
   {
-    cerr << "√" << endl;
+    cerr << "PASSED √" << endl;
   }
   else
   {
-    cerr << "×" << endl;
+    cerr << "FAILED ×" << endl;
   }
 }
 
